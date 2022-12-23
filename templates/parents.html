@@ -1,0 +1,72 @@
+{%extends 'homepage.html'%}
+{%load static%}
+{%block content%}
+
+<!-- Header Area Start -->
+{%include 'header.html'%}
+<!-- End of Header Area -->
+<body class='teacher'>    
+
+<!-- Page Banner Area Start -->
+<div class="page-banner-area overlay section">
+    <div class="container">
+        <div class="row">
+            <!-- Page Banner -->
+            <div class="page-banner text-center col-xs-12">
+                <h1>Биздин мугалимдер </h1>
+                <!-- Breadcrumb -->
+                <ul class="breadcrumb">
+                    <li><a href="{% url 'index'%}">Башкы бет</a></li>
+                    <li><a href="{%url 'teacher'%}">Биздин мугалимдер</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End of Page Banner Area -->
+   
+<!-- Course Area Start -->
+<div class="row">
+    <!-- Start FAQ Start -->
+    <div class="all-faq-text">
+        <div class="col-md-8 col-sm-8 col-xs-12">
+            <div class="faq-full">
+                
+                <div class="faq-details">
+                    <div class="panel-group" id="accordion">
+                        <!-- Panel Default -->
+                        {%for faq in faq%}
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="check-title">
+                                    <a data-toggle="collapse" class="active" data-parent="#accordion" href="#check1">
+                                        <span class="acc-icons"></span>{{faq.name}}
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="check1" class="panel-collapse collapse in">
+                                <div class="panel-body">
+                                    <p>
+                                        {{faq.desc}} 
+                                    </p>		
+                                </div>
+                            </div>
+                        </div>
+                        {%endfor%}
+                        <!-- End Panel Default -->
+                        <!-- Panel Default -->
+                        
+                        <!-- End Panel Default -->									
+                    </div>
+                </div>
+            </div>
+       
+    </div>
+</div>
+<!-- End of Course Area -->
+<!-- Footer Top Area Start -->
+{%include 'footer.html'%}
+<!-- End of Footer Bottom Area -->
+
+<!-- jquery -->		
+{%endblock%}
