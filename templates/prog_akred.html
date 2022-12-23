@@ -25,23 +25,18 @@
 <!-- End of Page Banner Area -->
 
 <!-- News Area Start --> 
-<div class="news-area bg-white section pt-120 pb-120">
+<section class="schedule_page text_page section">
     <div class="container">
-        <!-- Section Title -->
-        <div class="row">
-            <div class="section-title col-xs-12 mb-80">
-                <h3>ПРОГРАММАЛЫК АККРЕДИТАЦИЯ</h3>
-            </div>
-        </div>
-        <div class="row mb--30">
-            <!-- News Item -->
-            {%for accreditation in accreditation%}
-
-                  <div class = 'adi_block'><span style="height: 182px;"><a href="{% url 'accreditations2_detail' accreditation.id %}" data-toggle="_modal" data-number="0">{{accreditation.name}}</a></span></div>
-            {% endfor %}
-        </div>
+       <div class="list" data-align-height="span">
+          {%for accreditation in accreditation%}
+          <div class = 'adi_block'><span style="height: 182px;"><a href="{% url 'prog_detail' accreditation.id %}" data-toggle="_modal" data-number="0">{{accreditation.name}}</a></span></div>
+          {% endfor %}
+       <div class="text">
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+       </div>
     </div>
-</div>
+ </section>
 <!-- End of Latest News Area -->
         
 <!-- Footer Bottom Area Start -->

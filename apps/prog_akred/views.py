@@ -17,12 +17,12 @@ def accreditations2(request):
 
 def accreditation_detail2(request,id):
     accreditation = AcreditationList2.objects.get(id = id)
-    settings = Settings.objects.latest('id')
+    setting = Settings.objects.latest('id')
     contact = Contact.objects.latest('id')
     context = {
         ''
         'accreditation':accreditation,
-        'settings':settings,
+        'setting':setting,
         'contact':contact
     }
     return render(request, 'prog_detail.html', context)

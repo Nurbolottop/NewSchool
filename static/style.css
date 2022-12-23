@@ -2886,3 +2886,27 @@ a.meanmenu-reveal i {
     border: 1px solid transparent;
     border-radius: 5px;
 }
+
+.adi_block{
+    border: 1px solid #DDD;
+    padding: 15px;
+    margin: 5px;
+    text-align: center;
+}
+.list{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.adi_block span a {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-weight: 600;
+    font-size: 14px;
+    color: #4C5665;
+}
+.adi_block span a:hover{
+    transition: .1s;
+    text-decoration: none;
+    color: #2CA31D;
+}
