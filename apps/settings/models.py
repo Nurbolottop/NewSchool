@@ -75,8 +75,8 @@ class Data(models.Model):
         return self.years_school
 
     class Meta:
-        verbose_name = 'Мектеп боюнча маалымат'
-        verbose_name_plural = 'Мектеп боюнча маалымат '
+        verbose_name = 'Биз сандабыз!'
+        verbose_name_plural = 'Биз сандабыз! '
 
 
 class Certificate(models.Model):
