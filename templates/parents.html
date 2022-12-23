@@ -35,23 +35,9 @@
                 <div class="faq-details">
                     <div class="panel-group" id="accordion">
                         <!-- Panel Default -->
-                        {%for faq in faq%}
-                        <div class="panel panel-default">
-                            <div class="panel-heading">
-                                <h4 class="check-title">
-                                    <a data-toggle="collapse" class="active" data-parent="#accordion" href="#check1">
-                                        <span class="acc-icons"></span>{{faq.name}}
-                                    </a>
-                                </h4>
-                            </div>
-                            <div id="check1" class="panel-collapse collapse in">
-                                <div class="panel-body">
-                                    <p>
-                                        {{faq.desc}} 
-                                    </p>		
-                                </div>
-                            </div>
-                        </div>
+                        {%for parent in parent%}
+                        <div class = 'adi_block'><span style="height: 182px;"><a href="{{parent.parents_doc.url}}" data-toggle="_modal" data-number="0">{{parent.name}}</a></span></div>
+
                         {%endfor%}
                         <!-- End Panel Default -->
                         <!-- Panel Default -->

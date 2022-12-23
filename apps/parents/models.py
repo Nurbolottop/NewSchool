@@ -2,8 +2,8 @@ from django.db import models
 
 # Create your models here.
 class Parents(models.Model):
-    name = models.CharField(max_length=244, verbose_name='Суроо!')
-    desc = models.TextField(verbose_name='Жоор!')
+    name = models.CharField(max_length=244, verbose_name='Аты!')
+    parents_doc = models.FileField(upload_to='parents_document/', verbose_name='Документ файл')
 
     def __str__(self):
         return self.name

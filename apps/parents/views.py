@@ -11,12 +11,13 @@ from apps.settings.models import Settings
 def parents(request):
     setting = Settings.objects.latest('id')
     contact = Contact.objects.latest('id')
-    faq = Parents.objects.all()
+    parent = Parents.objects.all()
     
     context = {
         'setting':setting,
         'contact':contact,
-        'faq':faq,
+        'parent':parent,
     }
 
     return render(request, 'parents.html', context)
+
