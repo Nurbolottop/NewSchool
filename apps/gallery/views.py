@@ -13,7 +13,7 @@ def gallery(request):
         'setting':setting,
         'contact':contact
     }
-    return render(request, 'galleru.html', context)
+    return render(request, 'gallery.html', context)
 
 def gallery_detail1(request,id):
     gallery = Gallery.objects.get(id = id)

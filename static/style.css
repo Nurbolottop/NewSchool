@@ -55,7 +55,7 @@ body {
 }
 
 body {
-    color: rgb(0, 0, 0);
+    color: rgb(10, 4, 4);
     font-family: "Lato", sans-serif;
     font-size: 14px;
     font-weight: 400;
@@ -2889,8 +2889,8 @@ a.meanmenu-reveal i {
 
 .adi_block{
     border: 1px solid #DDD;
-    padding: 15px;
-    margin: 5px;
+    padding: 25px;
+    margin: 10px;
     text-align: center;
 }
 .list{
@@ -2902,7 +2902,7 @@ a.meanmenu-reveal i {
     width: 100%;
     text-align: center;
     font-weight: 600;
-    font-size: 14px;
+    font-size: 17px;
     color: #4C5665;
 }
 .adi_block span a:hover{

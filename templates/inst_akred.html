@@ -25,20 +25,20 @@
 <!-- End of Page Banner Area -->
 
 <!-- News Area Start --> 
-<section class="schedule_page text_page section">
+<div class="news-area bg-white section pt-120 pb-120">
     <div class="container">
-       <div class="list" data-align-height="span">
-          {%for accreditation in accreditation%}
-          <div class = 'adi_block'><span style="height: 182px;"><a href="{% url 'inst_detail' accreditation.id %}" data-toggle="_modal" data-number="0">{{accreditation.name}}</a></span></div>
-          {% endfor %}
-       <div class="text">
-          <p>&nbsp;</p>
-          <p>&nbsp;</p>
-       </div>
-    </div>
- </section>
+        <!-- Section Title -->
+        <div class="row">
+            
 
-</style>
+            {%for accreditation in accreditation%}
+            <div class = 'adi_block'><span style="height: 182px;"><a href="{% url 'inst_detail' accreditation.id %}" data-toggle="_modal" data-number="0">{{accreditation.name}}</a></span></div>
+            {% endfor %}
+        </div>
+       
+    </div>
+</div>
+
 
 <!-- End of Latest News Area -->
         

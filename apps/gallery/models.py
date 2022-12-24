@@ -17,13 +17,12 @@ class GalleryDetail(models.Model):
     accreditation = models.ForeignKey(
         Gallery,
         on_delete= models.CASCADE,
-        related_name="accreditation",
+        related_name="gallery",
         verbose_name="Галерея"
 
     )
-    accreditation_detail = models.ImageField(upload_to='gallery/', verbose_name='Сурот')
-    def __str__(self):
-        return self.name
+    gallery_image = models.ImageField(upload_to='gallery/', verbose_name='Сурот')
+    
 
     class Meta:
         verbose_name = 'Галерея  болумго киргизуу'
