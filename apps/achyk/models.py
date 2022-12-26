@@ -21,7 +21,7 @@ class AchykSaatDetail(models.Model):
         verbose_name="Ачык саат"
 
     )
-    achyksaat_file = models.FileField(upload_to='achyksaat/', verbose_name='Документ файл')
+    achyksaat = models.FileField(upload_to='achyksaat/', verbose_name='Документ файл')
     name = models.CharField(max_length=255, verbose_name='Аты')
     def __str__(self):
         return self.name

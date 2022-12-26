@@ -17,7 +17,7 @@
                 <!-- Breadcrumb -->
                 <ul class="breadcrumb">
                     <li><a href="{% url 'index'%}">Башкы бет</a></li>
-                    <li><a href="{%url 'prog_detail' %}">Артка  кайтуу</a></li>
+                    <li><a href="{%url 'prog_akred' %}">Артка  кайтуу</a></li>
                 </ul>
             </div>
         </div>
@@ -25,22 +25,33 @@
 </div>
 <!-- End of Page Banner Area -->
 
-<!-- News Area Start --> 
-<section class="schedule_page text_page section">
-    <div class="container">
-       <div class="list" data-align-height="span">
-          {%for accreditation in accreditation.accreditation.all%}
 
-          <div class = 'adi_block'><span style="height: 182px;"><a href="{{accreditation.accreditation_detail.url}}" data-toggle="_modal" data-number="0">{{accreditation.name}}</a></span></div>
-          {% endfor %}
-          
-       </div>
-       <div class="text">
-          <p>&nbsp;</p>
-          <p>&nbsp;</p>
-       </div>
+<div class="news-area bg-white section pt-120 pb-120">
+    <div class="container">
+        <!-- Section Title -->
+        <div class="row">
+            <section class="schedule_page text_page section">
+                <div class="container">
+                <div class="list" data-align-height="span">
+                    {%for accreditation in accreditation.accreditation.all%}
+
+                    <div class = 'adi_block'><span style="height: 182px;"><a href="{{accreditation.accreditation_detail.url}}" data-toggle="_modal" data-number="0">{{accreditation.name}}</a></span></div>
+                    {% endfor %}
+                    
+                </div>
+                <div class="text">
+                    <p>&nbsp;</p>
+                    <p>&nbsp;</p>
+                </div>
+                </div>
+            </section>
+
+        </div>
+       
     </div>
- </section>
+</div>
+<!-- News Area Start --> 
+
 <!--End of Ne
 <!--End of News Area-->
         
