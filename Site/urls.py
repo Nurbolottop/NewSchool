@@ -60,10 +60,6 @@ urlpatterns = [
     path('gallery_detail/<int:id>/', gallery_detail1, name = 'gallery_detail' ),
     path('achykl-saat/', achyksaat, name='achyk_saat'),    
     path('achykl-saat_detail/<int:id>/', achyksaat_detail1, name = 'achyk_detail' ),
-
-
-
-
 ]
 
 
