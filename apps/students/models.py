@@ -8,12 +8,7 @@ class Studet(models.Model):
 
     )
 
-    desc_student = models.CharField(
-        max_length=255,
-        verbose_name='Класс жетекчисинин аты: .'
-
-    )
-
+   
     image_student = models.ImageField(
         upload_to='student_image/',
         verbose_name='Класстын суроту'
