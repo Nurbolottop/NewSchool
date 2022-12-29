@@ -52,16 +52,18 @@
                 <!-- Recent News -->
                 <div class="single-sidebar">
                     <h4 class="title">Акыркы Жанылыктар</h4>
+                    {% for news in random_new%}
+
                     <div class="recent-news">
-                        {% for news in random_new%}
                         <div class="recent-news-item">
                             <a class="image" href="{%url 'news_detail' news.id%}"><img src="{{news.image_news.url}}" alt="Image"></a>
                             <div class="content">
                                 <h5><a href="{%url 'news_detail' news.id%}">{{news.name_news}}</a></h5>
                             </div>
                         </div>
-                        {%endfor%}
                     </div>
+                    {%endfor%}
+
                 </div>
                 <!-- Category -->
                 
