@@ -14,3 +14,4 @@ class News(models.Model):
     class Meta:
         verbose_name = 'Жанылыктар'
         verbose_name_plural = 'Жанылыктар'
+        ordering = ('id', )

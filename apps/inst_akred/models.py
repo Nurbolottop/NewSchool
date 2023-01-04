@@ -10,7 +10,7 @@ class AcreditationList1(models.Model):
     class Meta:
         verbose_name = 'Институциялдык аккредитация'
         verbose_name_plural = 'Институциялдык аккредитация'
-
+        ordering = ('id', )
 
 
 class AcreditationList1Detail(models.Model):
@@ -23,9 +23,11 @@ class AcreditationList1Detail(models.Model):
     )
     accreditation_detail = models.FileField(upload_to='accreditation/', verbose_name='Документ файл')
     name = models.CharField(max_length=255, verbose_name='Аты')
+
     def __str__(self):
         return self.name
 
     class Meta:
         verbose_name = 'Институциялдык аккредитация болумго киргизуу'
         verbose_name_plural = 'Институциялдык аккредитация болумго киргизуу'
+        ordering = ('id', )

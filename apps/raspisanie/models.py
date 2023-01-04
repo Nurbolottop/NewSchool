@@ -6,7 +6,7 @@ class Raspisanie(models.Model):
     image = models.ImageField(upload_to='raspisanie_image/', verbose_name='Фотография')
     created_raspisanie = models.DateTimeField(auto_now_add=True)
 
-   
     class Meta:
         verbose_name = "Сабактардын жугуртмосу "
         verbose_name_plural = "Сабактардын жугуртмосу "
+        ordering = ('id', )

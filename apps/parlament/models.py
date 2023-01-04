@@ -23,3 +23,4 @@ class Parlament(models.Model):
     class Meta:
         verbose_name = "Мектеп парламенти"
         verbose_name = "Мектеп парламенти"
+        ordering = ('id', )

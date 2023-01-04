@@ -2,7 +2,6 @@ from django.db import models
 
 # Create your models here.
 class Settings(models.Model):
-
     name_site = models.CharField(
         max_length=244,
         verbose_name='Сайттын аты!'
@@ -47,9 +46,9 @@ class Slide(models.Model):
     class Meta:
         verbose_name = "Слайд"
         verbose_name_plural = "Слайд"
+        ordering = ('id', )
 
 class Data(models.Model):
-
     years_school = models.CharField(
         max_length=255,
         verbose_name='МЕКТЕПТИН НЕГИЗДЕЛГЕН ЖЫЛЫ'
@@ -76,8 +75,8 @@ class Data(models.Model):
 
     class Meta:
         verbose_name = 'Биз сандабыз!'
-        verbose_name_plural = 'Биз сандабыз! '
-
+        verbose_name_plural = 'Биз сандабыз!'
+        ordering = ('id', )
 
 class Certificate(models.Model):
     image = models.ImageField(
@@ -85,8 +84,7 @@ class Certificate(models.Model):
         verbose_name='Сурот'
     )
 
-
-
     class Meta:
         verbose_name = 'Сертификаттар'
-        verbose_name_plural = 'Сертификаттар '
+        verbose_name_plural = 'Сертификаттар'
+        ordering = ('id', )

@@ -20,12 +20,10 @@ class Pride(models.Model):
 
     )
 
-    
     def __str__(self):
         return self.name_pride
 
     class Meta:
         verbose_name = "Сыймыктанабыз!"
         verbose_name_plural = "Сыймыктанабыз!"
-
-    
+        ordering = ('id', )    

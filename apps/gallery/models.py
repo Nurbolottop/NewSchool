@@ -10,7 +10,7 @@ class Gallery(models.Model):
     class Meta:
         verbose_name = 'Галерея '
         verbose_name_plural = 'Галерея'
-
+        ordering = ('id', )
 
 
 class GalleryDetail(models.Model):
@@ -27,3 +27,4 @@ class GalleryDetail(models.Model):
     class Meta:
         verbose_name = 'Галерея  болумго киргизуу'
         verbose_name_plural = 'Галерея  болумго киргизуу'
+        ordering = ('id', )

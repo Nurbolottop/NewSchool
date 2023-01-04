@@ -11,3 +11,4 @@ class Parents(models.Model):
     class Meta:
         verbose_name = "Ата энелерге!"
         verbose_name_plural = "Ата эненлерге"
+        ordering = ('id', )

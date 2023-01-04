@@ -13,6 +13,7 @@ class About(models.Model):
     class Meta:
         verbose_name = "Биз жонундо маалымат"
         verbose_name_plural = "Биз жонундо кошумча маалыматтар"
+        ordering = ('id', )
 
 class Lessons(models.Model):
     name = models.CharField(max_length=255,verbose_name="Сабакты аты")
@@ -24,6 +25,7 @@ class Lessons(models.Model):
     class Meta:
         verbose_name = "Биздин сабак"
         verbose_name_plural = "Биздин сабактар"
+        ordering = ('id', )
 
 class Makal(models.Model):
     name = models.TextField(verbose_name="Макал")
@@ -34,3 +36,4 @@ class Makal(models.Model):
     class Meta:
         verbose_name = "Макалдар"
         verbose_name_plural = "Макалдар"
+        ordering = ('id', )

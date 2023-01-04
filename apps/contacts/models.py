@@ -37,6 +37,7 @@ class Contact(models.Model):
     class Meta:
         verbose_name = "Контакттар"
         verbose_name_plural = "Контакттар"
+        ordering = ('id', )
 
 
 class Comment(models.Model):
@@ -50,3 +51,4 @@ class Comment(models.Model):
     class Meta:
         verbose_name = 'Акыркы Кабарлар'
         verbose_name_plural = 'Акыркы Кабарлар'
+        ordering = ('id', )
