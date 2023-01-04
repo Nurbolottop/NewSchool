@@ -16,10 +16,9 @@
         <div class="container">
             <div class="row">
                 <div class="hero-content col-md-12">        
-                    <h2 class="wow fadeInUp" data-wow-delay="0.5s">{{setting.name_site}}, мектебине</h2>
-                    <h1 class="wow fadeInUp" data-wow-delay="1s">Кош келиниздер !</h1>
-                    <p class="wow fadeInUp" data-wow-delay="1.5s">{{slide.description_slide}}</p>
-                    <a class="btn wow fadeInUp" data-wow-delay="2s" href="courses.html">Маалымат алуу</a>
+                    <h2 class="wow fadeInUp" data-wow-delay="0.5s">{{setting.name_site}},орто мектеби мекемесине </h2>
+                    <h1 class="wow fadeInUp" data-wow-delay="1s">{{slide.description_slide}}</h1>
+                    <a class="btn wow fadeInUp" data-wow-delay="2s" href="{%url 'about'%}">Маалымат алуу</a>
                 </div>
             </div>
         </div>
@@ -236,7 +235,7 @@
                             <span><i class="zmdi zmdi-calendar-check"></i>{{news.created_news}}</span>
                        </div>
                        <p>{{news.description_news}}</p>
-                       <a href="{%url 'news_detail' news.id%}">Читать дальше</a>
+                       <a href="{%url 'news_detail' news.id%}">Улантып окуу</a>
                     </div>
                 </div>
             </div>

@@ -2838,15 +2838,15 @@ a.meanmenu-reveal i {
 }
 
 .recent-news-item .content h5 a {
-    color: #6b6b6b;
+    color: #161212;
 }
 
 .recent-news-item .content h5 a:hover {
-    color: #fdc800;
+    color: #0222c0;
 }
 
 .recent-news-item .meta {
-    margin-bottom: 4px;
+    margin-bottom: px;
 }
 
 .recent-news-item .meta a {

@@ -13,42 +13,34 @@
         <div class="row">
             <!-- Page Banner -->
             <div class="page-banner text-center col-xs-12">
-                <h1>Биздин мугалимдер </h1>
+                <h1>Ата энелерге </h1>
                 <!-- Breadcrumb -->
                 <ul class="breadcrumb">
                     <li><a href="{% url 'index'%}">Башкы бет</a></li>
-                    <li><a href="{%url 'teacher'%}">Биздин мугалимдер</a></li>
                 </ul>
             </div>
         </div>
     </div>
 </div>
 <!-- End of Page Banner Area -->
-   
-<!-- Course Area Start -->
-<div class="row">
-    <!-- Start FAQ Start -->
-    <div class="all-faq-text">
-        <div class="col-md-8 col-sm-8 col-xs-12">
-            <div class="faq-full">
-                
-                <div class="faq-details">
-                    <div class="panel-group" id="accordion">
-                        <!-- Panel Default -->
-                        {%for parent in parent%}
-                        <div class = 'adi_block'><span style="height: 190px;"><a href="{{parent.parents_doc.url}}" data-toggle="_modal" data-number="0">{{parent.name}}</a></span></div>
 
-                        {%endfor%}
-                        <!-- End Panel Default -->
-                        <!-- Panel Default -->
-                        
-                        <!-- End Panel Default -->									
-                    </div>
-                </div>
-            </div>
+
+
+<div class="news-area bg-white section pt-120 pb-120">
+    <div class="container">
+        <!-- Section Title -->
+        <div class="row">
+            
+
+            {%for parent in parent%}
+            <div class = 'adi_block'><span style="height: 190px;"><a href="{{parent.parents_doc.url}}" data-toggle="_modal" data-number="0">{{parent.name}}</a></span></div>
+
+            {%endfor%}
+        </div>
        
     </div>
 </div>
+
 <!-- End of Course Area -->
 <!-- Footer Top Area Start -->
 {%include 'footer.html'%}

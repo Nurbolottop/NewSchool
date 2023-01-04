@@ -6,6 +6,11 @@ class Studet(models.Model):
         max_length=255,
         verbose_name='Класстын аты.'
     )
+<<<<<<< HEAD
+=======
+
+   
+>>>>>>> 4ed2c14ad15feaf4f31c61eb3fb9132f77e518f3
     image_student = models.ImageField(
         upload_to='student_image/',
         verbose_name='Класстын суроту'
