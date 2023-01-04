@@ -5,14 +5,11 @@ class Parlament(models.Model):
     name_teacher = models.CharField(
         max_length=255,
         verbose_name='Окуучунун  аты.'
-
     )
-
     image_teacher = models.ImageField(
         upload_to='teacher_image/',
         verbose_name='Окуучунун суроту'
     )
-
     description_teacher = models.TextField(
         verbose_name='Окуучунун кызматы.'
     )

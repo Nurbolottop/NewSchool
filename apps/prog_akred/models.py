@@ -18,7 +18,6 @@ class AcreditationList2Detail(models.Model):
         on_delete= models.CASCADE,
         related_name="accreditation",
         verbose_name="Аккредитация"
-
     )
     accreditation_detail = models.FileField(upload_to='accreditation/', verbose_name='Документ файл')
     name = models.CharField(max_length=255, verbose_name='Аты')

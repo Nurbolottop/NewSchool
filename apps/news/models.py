@@ -7,7 +7,6 @@ class News(models.Model):
     description_news = models.TextField(verbose_name='Описание')
     created_news = models.DateTimeField(auto_now_add=True)
 
-
     def __str__(self):
         return self.name_news
 

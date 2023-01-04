@@ -23,19 +23,15 @@ class Settings(models.Model):
         verbose_name = 'Настройки'
         verbose_name_plural = "Настройка"
 
-
 class Slide(models.Model):
     first_slide = models.ImageField(
         upload_to="slide_site/",
         verbose_name='Биринчи слайд'
     )
-
     second_slide = models.ImageField(
         upload_to='slide_site/',
         verbose_name='Второй слайд'
     )
-
-
     description_slide = models.TextField(
         verbose_name='Слайдка маалымат!'
     )
@@ -53,18 +49,15 @@ class Data(models.Model):
         max_length=255,
         verbose_name='МЕКТЕПТИН НЕГИЗДЕЛГЕН ЖЫЛЫ'
     )
-
     child_school = models.CharField(
         max_length=255,
         verbose_name="ОКУУЧУЛАРДЫН САНЫ"
     )
-
     graduate_school = models.CharField(
         max_length=255,
         verbose_name='БҮТҮРҮҮЧҮЛӨР (ЖЫЛЫНА)'
 
     )
-
     book_school = models.CharField(
         max_length=255,
         verbose_name='КИТЕПТЕРДИН САНЫ'
